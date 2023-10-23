@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>simple calculater</title>
+  <link rel="stylesheet" href="calculater.css">
+</head>
+<body>
+  <h1><b>Simple calculater using js</b></h1>
+  <div class="calculater">
+    <input type="text" id="display">
+    <div class="button_container">
+      <button class="button"  onclick="cur='';
+      document.querySelector('#display').value=cur;">c</button>
+      <button class="button" onclick="cur=cur+'1';
+      document.querySelector('#display').value=cur;
+      ">1</button>
+      <button class="button" onclick="cur=cur+'2';
+      document.querySelector('#display').value=cur;">2</button>
+      <br>
+      <button class="button" onclick="cur=cur+'+';
+      document.querySelector('#display').value=cur;">+</button>
+      <button class="button" onclick="cur=cur+'3';
+      document.querySelector('#display').value=cur;">3</button>
+      <button class="button" onclick="cur=cur+'4';
+      document.querySelector('#display').value=cur;">4</button>
+      <br>
+      <button class="button" onclick="cur=cur+'-';
+      document.querySelector('#display').value=cur;">-</button>
+      <button class="button" onclick="cur=cur+'5';
+      document.querySelector('#display').value=cur;">5</button>
+      <button class="button" onclick="cur=cur+'6';
+      document.querySelector('#display').value=cur;">6</button>
+      <br>
+      <button class="button" onclick="cur=cur+'*';
+      document.querySelector('#display').value=cur;">*</button>
+      <button class="button" onclick="cur=cur+'7';
+      document.querySelector('#display').value=cur;">7</button>
+      <button class="button" onclick="cur=cur+'8';
+      document.querySelector('#display').value=cur;">8</button><br>
+      <button class="button" onclick="cur=cur+'/';
+      document.querySelector('#display').value=cur;">/</button>
+      <button class="button" onclick="cur=eval(cur);
+      document.querySelector('#display').value=cur;">=</button>
+      <button class="button" onclick="cur=cur+'9';
+      document.querySelector('#display').value=cur;">9</button>
+      <button class="button" onclick="cur=cur+'.';
+      document.querySelector('#display').value=cur;">.</button>
+      <button class="button" onclick="cur=cur+'0';
+      document.querySelector('#display').value=cur;">0</button>
+    </div>
+  </div>
+  <script>
+    let cur='';
+    document.querySelector('#display').value=cur;
+  </script>
+  
+</body>
+</html>
